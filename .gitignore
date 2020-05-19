@@ -38,10 +38,7 @@ eggs/
 lib/
 lib64/
 parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
+sdist/e
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -53,7 +50,7 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
+e
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -92,10 +89,7 @@ target/
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
-#Pipfile.lock
-
-# celery beat schedule file
-celerybeat-schedule
+#Pipfile.locke
 
 # SageMath parsed files
 *.sage.py
@@ -134,6 +128,8 @@ dmypy.json
 # Ignore all local history of files
 .history
 
+### Environment ###
+.env
 # End of https://www.gitignore.io/api/visualstudiocode,linux,python
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)

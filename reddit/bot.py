@@ -39,10 +39,13 @@ for post in hot_posts:
         except:
             print(f"Creattion of the directory failed ({url})")
 
-        with open(os.path.join(path, file_name), 'wb') as f:
+        with open(os.path.join(path, 'image.jpg'), 'wb') as f:
             f.write(r.content)
 
         #Save post info into directory
-        author = post.author
-        title = post.title
-        print(author, title)
+        post_data = {}
+        post_data['author'] = str(post.author)
+        post_data['title'] = str(post.title)
+
+        with open(os.path.join(path, 'data.txt'), 'w') as f:
+            json.dump(post_data, f)
